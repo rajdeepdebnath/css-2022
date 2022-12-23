@@ -1,0 +1,65 @@
+main section.landing-image{
+    position: relative;
+    grid-area: landing-image;
+    width:100%;
+    height: 100%;
+    background: url('image1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.foreground-blur{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1.5px);
+}
+
+.foreground{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.product-img{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.foreground img{
+    position: absolute;
+    left:-100px;
+    top:-20px;
+    width: 400px;
+    height: 300px;
+}
+
+.foreground .text div:first-child{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+
+.foreground .text div:nth-child(2){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.foreground .text button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}

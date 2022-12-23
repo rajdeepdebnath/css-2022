@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+}
+
+header.top {
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    border: none;
+    border-bottom: 1px solid rgb(210, 209, 209);
+    z-index: 1000;
+}
+
+header.top .container{
+    width:75%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    font-family:'Titillium Web', sans-serif;
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+.header-logo a{
+    text-decoration: none;
+    color:rgb(86, 85, 85);
+}
+
+nav > ul{
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    color:rgb(86, 85, 85);
+}
+
+nav > ul > li{
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(86, 85, 85);
+    padding: 5px 10px;
+}
+
+.nav-a-hover{
+    background-color: rgb(142, 142, 142);
+    color:white;
+}
+
+.nav-submenu{
+    position: absolute;
+    opacity: 0;
+    left: 20px;
+    top:-100px;
+    width: 150px;
+    background-color: rgb(251,251,251);
+    border: 1px solid rgb(228, 226, 226);
+    border-top: 3px solid rgb(144, 143, 143);
+    transform: translateY(120px);
+    transition: opacity 200ms ease-out, transform 500ms ease-out;
+}
+
+.nav-submenu ul{
+    list-style: none;
+}
+
+.nav-submenu li{
+    padding: 10px;
+    margin-left: -40px;
+}
+
+.nav-submenu li:hover{
+    background: linear-gradient(90deg, rgb(163, 163, 163), rgb(230, 230, 230));
+    color:white;
+}
+
+.nav-submenu a:hover{
+    color:white;
+}
+
+.nav-submenu li:not(:first-child){
+    border-top: 1px solid rgb(220, 217, 217);
+}
+
+
+main{
+    margin-top: 70px;
+    display: grid;
+    grid-template-areas: "landing-image"
+                         "pages"
+                         "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 70vh auto 70px;
+}
+
+footer{
+    grid-area: footer;
+    height: 100px;
+    border-top: 1px solid rgb(210, 209, 209);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgb(193, 192, 192);
+}
+
+footer div.social ul{
+    list-style: none;
+}
+
+footer div.social ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+footer div.social ul li a{
+    text-decoration: none;
+    color:rgb(193, 192, 192);
+}
